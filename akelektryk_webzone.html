@@ -5,46 +5,93 @@
 <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
 	<title>Akelektryk webzone</title>
 	<style>
+	/* Styl nawigacji*/
+	#navbar {
+		overflow: hidden;
+		width: 100%;
+		background-color:rgb(255, 255, 255);
+		position: fixed;
+	}
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	#left {
+		float: left;
+	}
+	#right {
+		float: right;
+	}
 	.logo {
 		width: auto;
 		position: relative;
-		top: 5px;
+		top: 0px;
 		left: 40px;
+		padding: 1px 1px 1px 1px;
 
-		}
+	}
 	.title {
 		text-align: center;
+	}
+	.menu {
+		position: fixed;
+		right: 500px;
+		font-family: monospace;
+		font-weight: 900;
+		list-style-type: none;
+		display: inline;
+	}
+	a:hover {
+		color: rgb(170, 37, 148);
 	}
 	h1 {
 		color: rgb(88, 88, 44);
 		}
-	p{
+	h2 {
+		font-family: Arial, Helvetica, sans-serif;
+	}		
+	p {
 		font-family: monospace;
 		font-size: 50px;
 		text-align: justify;
-		}
-	p2{
+	}
+	p2 {
 		font-family: "Goblin One";
 		font-size: 30px;
-		}
+	}
+	footer {
+		background-color:rgb(0, 0, 0);
+		color:rgb(255, 255, 255);
+	}
+	#topofpage {
+		background-color: bisque;
+		width: 100%;
+		height: 100px;
+	}
 	</style>
 	</head>
-	<body style="background-color: rgb(255, 255, 255);">
-	
+	<body style="background-color: bisque">
 	<main>
-		<div>
-		<img class="logo" src="logo.jpg" alt="Akelektryk logo">
+		<div id="navbar">
+				<img id="left" class="logo" src="logo.jpg" alt="Akelektryk logo">
+				<nav>
+				<ul id="right" class="menu">
+					<li><a href="#">O firmie</a></li>
+					<li><a href="#">Realizacje</a></li>
+					<li><a href="#">Oferta</a></li>
+					<li><a href="#">Praca</a></li>
+				</ul>
+				</nav>
 		</div>
-		<hr>
+		<div id="topofpage"></div>
+		<div>
 		<h1 class="title">AKELEKTRYK</h1>
-		<a href ="https://bing.com" target="_blank"><img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A cute cat"></a>
+		</div>
 		<div>
 		
 		<a href="#footer">Go to footer</a>
 		
-		</div>
-		<div>
-			<a href="akelektryk_oferta.html" target="_blank">Oferta</a>
 		</div>
 		<div>
 			<p2>Sample Paragraph to test Github Desktop.</p2>
